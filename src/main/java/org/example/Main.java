@@ -12,6 +12,8 @@ public class Main {
 
         int wrongCount = 0;
 
+        boolean output;
+
         String words = "Shall I compare thee to a summer’s day? " +
                 "Thou art more lovely and more temperate: " +
                 "Rough winds do shake the darling buds of May, " +
@@ -69,17 +71,17 @@ public class Main {
 
             String correctAns = wordOrder[num].toLowerCase();
 
-            if (userInput.equals(correctAns)){
-                correctCount++;
-            } else {
-                wrongCount++;
-            }
-        }
+            var rightAns = new StringCompare();
 
-        if (correctCount == 3){
-            System.out.println("Great job!");
-        } else{
-            System.out.println("Not quite right, try again!");
+           output =  rightAns.compare(userInput, correctAns);
+
+           if(output){
+               correctCount++;
+           } else{
+               wrongCount++;
+           }
+
+           rightAns.finalResult(correctCount, wrongCount);
         }
     }
 }
