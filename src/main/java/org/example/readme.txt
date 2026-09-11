@@ -1,4 +1,5 @@
 This program prints a section from a sonnet and asks the user for the next word in the sonnet.
+Limitations: Program expects string inputs exactly as they are in the sonnet, punctuations included.
 
 The program takes user input from the console.
 

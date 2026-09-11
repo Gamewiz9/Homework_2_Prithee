@@ -81,7 +81,7 @@ public class Main {
                wrongCount++;
            }
 
-           rightAns.finalResult(correctCount, wrongCount);
+           System.out.println(rightAns.finalResult(correctCount, wrongCount));
         }
     }
 }

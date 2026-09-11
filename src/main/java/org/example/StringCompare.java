@@ -13,11 +13,16 @@ public class StringCompare {
         return outputCompare ;
     }
 
-    void finalResult(int correctCount, int wrongCount){
-        if (correctCount > 3){
-            System.out.println("Great job!");
+    String finalResult(int correctCount, int wrongCount){
+
+        String userSendOff;
+
+        if (correctCount >= 3){
+            userSendOff = ("Great job!");
         } else{
-            System.out.println("Not quite right, try again!");
+            userSendOff = ("Not quite right, try again!");
         }
+
+        return userSendOff;
     }
 }
