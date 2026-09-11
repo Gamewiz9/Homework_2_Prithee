@@ -1,13 +1,11 @@
 package org.example;
 
-import org.w3c.dom.ls.LSOutput;
-
-import java.util.Locale;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+
     static void main() {
 
         int correctCount = 0;
@@ -45,11 +43,10 @@ public class Main {
 
             int count = 0;
 
-            for(int i = 0; i < num; i++){
+            for(int i = 0; i < max; i++){
 
                 if (count == 6){
                     sb.append("\n");
-                    sb.append(" ");
                     count = 0;
                 }
 
@@ -63,8 +60,6 @@ public class Main {
             String text = sb.toString();
 
             System.out.println(text);
-
-            System.out.println(wordOrder[num]);
 
             System.out.println("What is the next word in the sonnet?\n");
 
